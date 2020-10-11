@@ -1,7 +1,7 @@
 ### Interview
 - OOP
 	- [Basic principles](object-oriented-paradigm/principles.md)
-	- Patterns
+	- [Patterns](object-oriented-paradigm/patterns.md)
 - Compilation
 - Java Core
 	- data types
