@@ -2,7 +2,7 @@
 
 ## Creational
 
-##### Factory method
+### Factory method
 Method for creating product objects without specifying their concrete classes.
 
 <details>
@@ -10,6 +10,10 @@ Method for creating product objects without specifying their concrete classes.
 <p>
 
 ![](factoryMethod.png)
+
+<details>
+<summary>Java like</summary>
+<p>
 
 ```java
 // code
@@ -47,10 +51,6 @@ class WindowDialog : Dialog() {
     override fun createButton() = WindowButton()
 }
 
-```
-
-
-```java
 //client
 fun main() {
     val dialog: Dialog
@@ -65,7 +65,56 @@ dialog.render()
 </p>
 </details>
 
-##### Abstract Factory
+<details>
+<summary>Companion object</summary>
+<p>
+
+```java
+enum class Genre {
+    SCIENCE, LITERATURE
+}
+
+interface Book {
+    fun getInfo(): String
+    fun order(): String
+    fun rate(): String
+}
+
+
+class BookFactory {
+    companion object {
+        fun createBook(genre: Genre): Book = when (genre) {
+            Genre.SCIENCE -> object: Book {
+                override fun getInfo() = "science"
+                override fun order() = "123"
+                override fun rate() = "M"
+            }
+            Genre.LITERATURE -> object: Book {
+                override fun getInfo(): String = "literature"
+                override fun order(): String = "321"
+                override fun rate(): String = "A"
+            }
+        }
+    }
+}
+
+// client
+fun main() {
+    val book = BookFactory.createBook(Genre.SCIENCE)
+    book.getInfo()
+}
+```
+
+
+
+</p>
+</details>
+
+
+</p>
+</details>
+
+### Abstract Factory
 <details>
 	<summary>code</summary>		
 </details>
