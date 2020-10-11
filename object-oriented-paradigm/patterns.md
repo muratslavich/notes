@@ -1,10 +1,20 @@
 # Design patterns
 
-- Creational
-	- Factory method
-	- Abstract Factory
-	- Builder
-	- Prototype
+## Creational
+
+<details>
+	<summary>Factory method</summary>
+  	## Heading
+  	1. A numbered
+  	2. list
+    	* With some
+     	* Sub bullets
+</details>
+
+
+- Abstract Factory
+- Builder
+- Prototype
 - Structural
 	- Adapter
 	- Bridge

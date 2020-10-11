@@ -14,7 +14,7 @@
 	- Interface segregation principle
 	- Dependency inversion principle - High-level modules should not depend on low-level modules. Dependency injection pattern solve this problem.
 
-- DRY - Don`t repeat yourself
+- DRY - Don't repeat yourself
 - YAGNI - You ain't gonna need it
 - KISS - keep it stupid simple
 - GRASP - General Responsibility Assignment Software Patterns
