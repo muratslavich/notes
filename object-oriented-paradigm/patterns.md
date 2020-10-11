@@ -8,7 +8,7 @@ Method for creating product objects without specifying their concrete classes.
 <details>
 	<summary>examples</summary>
 
-![](factoryMethod.png)
+
 
 ```
 // code
