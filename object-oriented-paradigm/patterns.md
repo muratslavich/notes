@@ -6,9 +6,7 @@
 Method for creating product objects without specifying their concrete classes.
 
 <details>
-	<summary>examples</summary>
-
-
+<summary>examples</summary>
 
 ```
 // code
