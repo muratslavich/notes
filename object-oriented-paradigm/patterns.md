@@ -51,12 +51,11 @@ class WindowDialog : Dialog() {
 //client
 fun main() {
     val dialog: Dialog
-		when (os) {
-			"Window" -> dialog = WindowDialog()
-			"Linux"  -> dialog = LinuxDialog()
-		}
-
-		dialog.render()
+    when (os) {
+       "Window" -> dialog = WindowDialog()
+       "Linux"  -> dialog = LinuxDialog()
+    }
+    dialog.render()
 }
 ```
 
