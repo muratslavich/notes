@@ -1,0 +1,68 @@
+### Interview
+- OOP
+	- [Basic principles](object-oriented-paradigm/principles.md)
+	- Patterns
+- Compilation
+- Java Core
+	- data types
+		- primitives
+		- autoboxing
+	- operations
+	- object methods
+- classes
+	- immutability
+	- references
+	- static
+	- inner classes
+- exceptions
+- Collections
+	- equals & hashCode
+	- HashMap
+	- Complexity
+- Generics
+	- erasing
+	- heap pollution
+- Mutithreading
+	- creating
+	- synchronization
+	- volatile
+	- concurrent collections
+- Lambda and functional interfaces
+- Stream API
+- Serialization
+- Reflection
+- Java Memory model
+- Garbage collector
+- JMX console
+- JNDI
+- Web technologies
+	- Http
+	- Soap
+	- Rest
+- Spring
+	- core
+	- AOP
+	- proxying mechanisms
+	- JDBC
+	- custom annotation
+	- Spring Boot
+	- Spring Security
+	- Spring Data
+	- Spring Cloud
+	- Spring Feign
+- JPA/ORM Hibernate
+- validation
+- Logging
+- JMS
+	- Active MQ
+	- Rabbit MQ
+	- Kafka
+- Docker
+- Kubernetes
+- microservices
+- transaction
+	- isolation
+	- spring transaction
+	- distributed transactions
+- Authorization
+- Data Structure and Algorithms
