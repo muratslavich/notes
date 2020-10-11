@@ -112,7 +112,8 @@ fun main() {
 <summary>Factory method by interface delegation</summary>
 <p>
 
-```Java
+```java
+
 interface Dependency<T> {
     var mocked: T?
     fun get(): T
@@ -153,8 +154,6 @@ fun main() {
 }
 
 ```
-
-
 
 </p>
 </details>
