@@ -7,8 +7,11 @@ Method for creating product objects without specifying their concrete classes.
 
 <details>
 <summary>examples</summary>
+<p>
 
-```
+![](factoryMethod.png)
+
+```java
 // code
 interface Button {
     fun render()
@@ -46,6 +49,20 @@ class WindowDialog : Dialog() {
 
 ```
 
+
+```java
+//client
+fun main() {
+    val dialog: Dialog
+    when (os) {
+       "Window" -> dialog = WindowDialog()
+       "Linux"  -> dialog = LinuxDialog()
+    }
+dialog.render()
+}
+```
+
+</p>
 </details>
 
 ##### Abstract Factory
