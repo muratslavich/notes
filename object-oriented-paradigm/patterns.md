@@ -10,7 +10,7 @@ Method for creating product objects without specifying their concrete classes.
 
 ![](factoryMethod.png)
 
-```java
+```
 // code
 interface Button {
     fun render()
@@ -47,7 +47,8 @@ class WindowDialog : Dialog() {
 }
 
 ```
-```java
+
+```
 //client
 fun main() {
     val dialog: Dialog
