@@ -241,10 +241,49 @@ fun main() {
   </p>		
 </details>
 
-##### Builder
+### Builder
 <details>
-	<summary>code</summary>		
+	<summary>Construct complex objects step by step</summary>		
+  <p>
+
+```java
+class BankAccount(
+    private val accountNumber: Double?,
+    private val owner: String?,
+    private val branch: String?,
+    private val balance: Double?,
+    private val interestRate: Double?
+) {
+    data class Builder(
+        private var accountNumber: Double? = null,
+        private var owner: String? = null,
+        private var branch: String? = null,
+        private var balance: Double? = null,
+        private var interestRate: Double? = null
+    ) {
+        fun accountNumber(accountNumber: Double) = apply { this.accountNumber = accountNumber }
+        fun owner(owner: String) = apply { this.owner = owner }
+        fun branch(branch: String) = apply { this.branch = branch }
+        fun balance(balance: Double) = apply { this.balance = balance }
+        fun interestRate(interestRate: Double) = apply { this.interestRate = interestRate }
+        fun build() = KotlinBankAccount(accountNumber, owner, branch, balance, interestRate)
+    }
+}
+
+fun main() {
+    val bankAccount = BankAccount.Builder()
+        .accountNumber(12.0)
+        .balance(200.0)
+        .branch("develop")
+        .build()
+}
+
+```
+
+  </p>
 </details>
+
+
 
 ##### Prototype
 <details>
