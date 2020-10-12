@@ -372,8 +372,8 @@ class FahrenheitAdapter(
 
 ### Bridge
 <details>
-	<summary>Split related classes into separate independent hierarchies</summary>
-
+<summary>Split related classes into separate independent hierarchies</summary>
+<p>
 Abstraction - high order layer, delegate the work to implementation layer.
 
 The abstraction object controls the appearance of the app, delegating the actual work to the linked implementation object. Different implementations are interchangeable as long as they follow a common interface, enabling the same GUI to work under Windows and Linux.
@@ -413,10 +413,10 @@ fun main() {
     print("${tv.isEnabled} ${tv.volume}")
 }
 ```
-
+</p>
 </details>
 
-##### Composite
+### Composite
 <details>
 	<summary>code</summary>		
 </details>
