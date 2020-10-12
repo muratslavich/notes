@@ -173,11 +173,18 @@ Needed to obtain product families.
 |Button   |WinButton  |MacButton  |
 |Checkbox |WinCheckbox|MacCheckbox|
 
+<details>
+<summary>Scheme</summary>
+<p>
+
 ![](abstract-factory.png)
 
+</p>
+</details>
+
 <details>
-	<summary>code</summary>
-  <p>
+<summary>Code</summary>
+<p>
 
 ```java
 interface Button {
