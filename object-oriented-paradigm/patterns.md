@@ -112,6 +112,8 @@ fun main() {
 <summary>Factory method by interface delegation</summary>
 <p>
 
+![](factoryMethod-1.png)
+
 ```java
 
 interface Dependency<T> {
