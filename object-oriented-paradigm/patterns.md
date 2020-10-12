@@ -1,6 +1,8 @@
 # Design patterns
 
-## Creational
+<details>
+<summary>Creational</summary>
+<p>
 
 ### Factory method
 
@@ -283,14 +285,59 @@ fun main() {
   </p>
 </details>
 
-
-
-##### Prototype
+### Prototype
 <details>
-	<summary>code</summary>		
+	<summary>Copy existing objects without making your code dependent on their classes</summary>
+  <p>
+
+```java
+abstract class Shape(
+    private var Y: Int? = null,
+    private var X: Int? = null,
+    private var color: String? = null
+) {
+    constructor(source: Shape) : this(source.X, source.Y, source.color)
+    abstract fun clone(): Shape
+}
+
+class Rectangle : Shape {
+    var width: Int?
+    var height: Int?
+
+    constructor(width: Int? = null, height: Int? = null) : super() {
+        this.width = width
+        this.height = height
+    }
+
+    constructor(source: Rectangle) : super(source) {
+        this.width = source.width
+        this.height = source.height
+    }
+
+    override fun clone(): Shape = Rectangle(this)
+}
+
+fun main() {
+    val rectangle = Rectangle()
+    rectangle.width = 10
+    rectangle.height = 20
+
+    val shapes = mutableListOf(rectangle, rectangle.clone(), rectangle.clone())
+
+    shapes.forEach{ println(it) }
+}
+```
+
+  </p>		
 </details>
 
-## Structural
+</p>		
+</details>
+
+<details>
+<summary>Structural</summary>
+<p>
+
 ##### Adapter
 <details>
 	<summary>code</summary>		
@@ -326,7 +373,13 @@ fun main() {
 	<summary>code</summary>		
 </details>
 
-## Behavioral
+</p>		
+</details>
+
+<details>
+<summary>Behavioral</summary>
+<p>
+
 #####	Chain of Responsibility
 <details>
 	<summary>code</summary>		
@@ -377,9 +430,19 @@ fun main() {
 	<summary>code</summary>		
 </details>
 
+</p>		
+</details>
+
+<details>
+<summary>Concurrency</summary>
+<p>
+
 ## Concurrency
 ##### Double-checked locking
 ##### Monitor Object
 ##### Read write lock pattern
 ##### Scheduler pattern
 ##### Thread pool pattern
+
+</p>		
+</details>
