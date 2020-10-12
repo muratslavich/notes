@@ -374,6 +374,7 @@ class FahrenheitAdapter(
 <details>
 <summary>Split related classes into separate independent hierarchies</summary>
 <p>
+
 Abstraction - high order layer, delegate the work to implementation layer.
 
 The abstraction object controls the appearance of the app, delegating the actual work to the linked implementation object. Different implementations are interchangeable as long as they follow a common interface, enabling the same GUI to work under Windows and Linux.
@@ -418,7 +419,41 @@ fun main() {
 
 ### Composite
 <details>
-	<summary>code</summary>		
+<summary>Compose objects into tree structures and then work with these structures</summary>
+<p>
+
+![](composite.png)
+
+```java
+// hierarchy
+open class Equipment(open val price: Int, name: String)
+class Processor: Equipment(1070, "structural.Composite.Processor")
+class HardDrive: Equipment(250, "Hard")
+class Memory: Equipment(280, "structural.Composite.Memory")
+
+// composite
+open class Composite(name: String): Equipment(0, name) {
+    private val equipments = ArrayList<Equipment>()
+    override val price: Int
+        get() = equipments.map { it.price }.sum()
+
+    fun add(equipment: Equipment) = apply { equipments.add(equipment) }
+}
+
+class PersonalComputer: Composite("PC")
+
+
+fun main() {
+    val pc = PersonalComputer()
+        .add(Processor())
+        .add(HardDrive())
+        .add(Memory())
+
+    print(pc.price)
+}
+```
+
+</p>		
 </details>
 
 ##### Decorator
