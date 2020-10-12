@@ -338,9 +338,36 @@ fun main() {
 <summary>Structural</summary>
 <p>
 
-##### Adapter
+### Adapter
 <details>
-	<summary>code</summary>		
+	<summary>Allows objects with incompatible interfaces to collaborate</summary>
+<p>
+
+The adapter implements the interface of one object and wraps the other one.
+
+![](structure-object-adapter.png)
+
+```java
+open class CelsiusTemperature(
+    override var temperature: Double
+): Temperature
+
+class FahrenheitTemperature(
+    override var temperature: Double
+): Temperature
+
+class FahrenheitAdapter(
+    private val celsiusTemperature: CelsiusTemperature
+) {
+    fun convertToFahrenheitTemperature(): FahrenheitTemperature = FahrenheitTemperature(
+        ((BigDecimal.valueOf(celsiusTemperature.temperature)
+            .setScale(2) * BigDecimal(9) / BigDecimal(5)) + BigDecimal(32))
+            .toDouble()
+    )
+}
+```
+
+</p>  	
 </details>
 
 ##### Bridge
