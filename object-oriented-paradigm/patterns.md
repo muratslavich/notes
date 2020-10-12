@@ -3,10 +3,9 @@
 ## Creational
 
 ### Factory method
-Method for creating product objects without specifying their concrete classes.
 
 <details>
-<summary>examples</summary>
+<summary>Method for creating product objects without specifying their concrete classes.</summary>
 <p>
 
 ![](factoryMethod.png)
@@ -164,20 +163,17 @@ fun main() {
 </details>
 
 ### Abstract Factory
-Factory of factories.
-Needed to obtain product families.
 
+<details>
+<summary>Factory of factories. Needed to obtain product families.</summary>
+<p>
+
+![](abstract-factory.png)
 
 |         |Windows    |Mac        |
 |---------|-----------|-----------|
 |Button   |WinButton  |MacButton  |
 |Checkbox |WinCheckbox|MacCheckbox|
-
-<details>
-<summary>Scheme</summary>
-<p>
-
-![](abstract-factory.png)
 
 </p>
 </details>
