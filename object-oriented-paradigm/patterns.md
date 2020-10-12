@@ -370,9 +370,50 @@ class FahrenheitAdapter(
 </p>  	
 </details>
 
-##### Bridge
+### Bridge
 <details>
-	<summary>code</summary>		
+	<summary>Split related classes into separate independent hierarchies</summary>
+
+Abstraction - high order layer, delegate the work to implementation layer.
+
+The abstraction object controls the appearance of the app, delegating the actual work to the linked implementation object. Different implementations are interchangeable as long as they follow a common interface, enabling the same GUI to work under Windows and Linux.
+
+![](structure-en-2x.png)
+
+```java
+// Implementation layer
+interface Device {
+    var isEnabled: Boolean
+    var volume: Int
+}
+
+class Tv(override var isEnabled: Boolean = false, override var volume: Int = 0) : Device
+class Radio(override var isEnabled: Boolean = true, override var volume: Int = 10) : Device
+
+// Abstraction layer
+class Remote(val device: Device) {
+
+    fun togglePower() {
+        device.isEnabled = !device.isEnabled
+    }
+
+    fun volumeUp() = run { device.volume += 10 }
+    fun volumeDown() = run { device.volume -= 10 }
+
+}
+
+
+fun main() {
+    val tv = Tv()
+    val radio = Radio()
+
+    val remote = Remote(tv) // this is Bridge (aggregation over inheritance)
+    remote.togglePower()
+
+    print("${tv.isEnabled} ${tv.volume}")
+}
+```
+
 </details>
 
 ##### Composite
