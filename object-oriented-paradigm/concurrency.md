@@ -1,4 +1,4 @@
-# [Design patterns](object-oriented-paradigm/patterns.md)
+# [Design patterns](patterns.md)
 ## Concurrency
 ##### Double-checked locking
 ##### Monitor Object

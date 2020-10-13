@@ -1,4 +1,4 @@
-# [Design patterns](object-oriented-paradigm/patterns.md)
+# [Design patterns](patterns.md)
 ## Behavioral patterns
 ###	Chain of Responsibility
 <details>

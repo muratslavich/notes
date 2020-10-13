@@ -1,4 +1,4 @@
-# [Design patterns](object-oriented-paradigm/patterns.md)
+# [Design patterns](patterns.md)
 ## Creational Patterns
 ### Factory method
 <details>

@@ -1,4 +1,4 @@
-# [Design patterns](object-oriented-paradigm/patterns.md)
+# [Design patterns](patterns.md)
 ## Structural patterns
 ### Adapter
 <details>
