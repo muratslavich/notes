@@ -194,9 +194,12 @@ class MediatorTest {
 
 </details>
 
-##### Memento
+### Memento
 <details>
-	<summary>code</summary>		
+	<summary>Save and restore the previous state of an object without revealing the details of its implementation</summary>
+
+![](memento.png)
+
 </details>
 
 ##### Observer
