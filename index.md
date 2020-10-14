@@ -5,10 +5,10 @@
 - [Compilation and execution](compilation/compilation.md)
 - [Java Core](core/core.md)
 	- data types
-		- primitives
-		- autoboxing
+	- primitives
+	- autoboxing
 	- operations
-	- object methods
+	- class object
 - classes
 	- immutability
 	- references
