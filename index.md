@@ -8,7 +8,7 @@
 	- [Object class methods](core/object.md)
 	- [immutability](core/immutability.md)
 	- [references](core/references.md)
-	- static keyword
+	- [static keyword](core/static.md)
 	- inner classes
 	- exceptions
 	- collections
