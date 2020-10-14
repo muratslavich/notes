@@ -4,11 +4,10 @@
 	- [Patterns](object-oriented-paradigm/patterns.md)
 - [Compilation and execution](compilation/compilation.md)
 - [Java Core](core/core.md)
-	- data types
 	- primitives
 	- autoboxing
 	- operations
-	- class object
+	- class methods
 - classes
 	- immutability
 	- references
