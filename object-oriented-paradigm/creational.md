@@ -5,7 +5,7 @@
 <summary>Method for creating product objects without specifying their concrete classes.</summary>
 <p>
 
-![](factoryMethod.png)
+![](/images/factoryMethod.png)
 
 <details>
 <summary>Java like</summary>
@@ -108,7 +108,7 @@ fun main() {
 <summary>Factory method by interface delegation</summary>
 <p>
 
-![](factoryMethod-1.png)
+![](/images/factoryMethod-1.png)
 
 ```java
 
@@ -165,7 +165,7 @@ fun main() {
 <summary>Factory of factories. Needed to obtain product families.</summary>
 <p>
 
-![](abstract-factory.png)
+![](/images/abstract-factory.png)
 
 |         |Windows    |Mac        |
 |---------|-----------|-----------|

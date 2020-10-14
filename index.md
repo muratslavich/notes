@@ -2,7 +2,7 @@
 - OOP
 	- [Basic principles](object-oriented-paradigm/principles.md)
 	- [Patterns](object-oriented-paradigm/patterns.md)
-- Compilation
+- [Compilation](compilation/compilation.md)
 - Java Core
 	- data types
 		- primitives

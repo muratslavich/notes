@@ -7,7 +7,7 @@
 
 The adapter implements the interface of one object and wraps the other one.
 
-![](structure-object-adapter.png)
+![](/images/structure-object-adapter.png)
 
 ```java
 open class CelsiusTemperature(
@@ -41,7 +41,7 @@ Abstraction - high order layer, delegate the work to implementation layer.
 
 The abstraction object controls the appearance of the app, delegating the actual work to the linked implementation object. Different implementations are interchangeable as long as they follow a common interface, enabling the same GUI to work under Windows and Linux.
 
-![](structure-en-2x.png)
+![](/images/structure-en-2x.png)
 
 ```java
 // Implementation layer
@@ -84,7 +84,7 @@ fun main() {
 <summary>Compose objects into tree structures and then work with these structures</summary>
 <p>
 
-![](composite.png)
+![](/images/composite.png)
 
 ```java
 // hierarchy
@@ -122,7 +122,7 @@ fun main() {
 <details>
 	<summary>Attach new behaviors to objects by placing these objects inside special wrapper</summary>
 
-![](decorator.png)
+![](/images/decorator.png)
 
   <p>
 
@@ -169,7 +169,7 @@ fun main() {
 <details>
 <summary>Provides a simplified interface to a library, a framework, or any other complex set of classes</summary>
 
-![](facade.png)
+![](/images/facade.png)
 
 <p>
 
@@ -221,7 +221,7 @@ fun main() {
 <details>
 	<summary>Sharing common parts of state between multiple objects instead of keeping all of the data in each object</summary>		
 
-![](flyweight.png)
+![](/images/flyweight.png)
 
 ```java
 // This class contain part of tree describing. It isn`t unique for each tree
@@ -276,7 +276,7 @@ fun main() {
 <details>
 	<summary>Controls access to the original object allowing to perform</summary>
 
-![](proxy.png)
+![](/images/proxy.png)
 
 ```java
 interface ThirdPartyLib {
