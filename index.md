@@ -9,7 +9,7 @@
 	- [immutability](core/immutability.md)
 	- [references](core/references.md)
 	- [static keyword](core/static.md)
-	- inner classes
+	- [inner classes](core/inner.md)
 	- exceptions
 	- collections
 		- equals & hashCode
