@@ -7,7 +7,7 @@
 	- [types and operations](core/types.md)
 	- [Object class methods](core/object.md)
 	- [immutability](core/immutability.md)
-	- references
+	- [references](core/references.md)
 	- static keyword
 	- inner classes
 	- exceptions
