@@ -4,7 +4,7 @@
 <details>
 	<summary>Request along a chain of handlers</summary>
 
-![](images/chain.png)  
+![](/notes/images/chain.png)  
 
 ```java
 interface HeadersChain {
@@ -92,7 +92,7 @@ class ChainOfResponsibilityTest {
 <details>
 	<summary>Turn a request into a stand-alone object that contains all information about the request</summary>
 
-![](/images/command.png)
+![](/notes/images/command.png)
 
 ```java
 interface OrderCommand {
@@ -143,7 +143,7 @@ class CommandTest {
 <details>
 	<summary>Restrict direct communications between the objects and forces them to collaborate only via a mediator object</summary>
 
-![](/images/mediator.png)
+![](/notes/images/mediator.png)
 
 ```java
 class ChatUser(private val mediator: ChatMediator, private val name: String) {
@@ -198,7 +198,7 @@ class MediatorTest {
 <details>
 	<summary>Save and restore the previous state of an object without revealing the details of its implementation</summary>
 
-![](/images/memento.png)
+![](/notes/images/memento.png)
 
 </details>
 
@@ -206,7 +206,7 @@ class MediatorTest {
 <details>
 	<summary>Define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing</summary>
 
-![](/images/observer.png)
+![](/notes/images/observer.png)
 
 ```java
 interface EventListener {
@@ -269,7 +269,7 @@ fun main() {
 <details>
 	<summary>Behavior depending on state - state machine</summary>
 
-![](/images/state.png)
+![](/notes/images/state.png)
 
 ```java
 // Common interface for all states.
@@ -389,7 +389,7 @@ fun main() {
 <details>
 	<summary>Define a family of algorithms, put each of them into a separate class, and make their objects interchangeable</summary>
 
-![](/images/strategy.png)
+![](/notes/images/strategy.png)
 
 ```java
 // Common interface for all strategies
@@ -587,7 +587,7 @@ fun main() {
 <details>
 	<summary>Separate algorithms from the objects on which they operate</summary>
 
-![](/images/visitor.png)
+![](/notes/images/visitor.png)
 
 ```java
 interface Shape {

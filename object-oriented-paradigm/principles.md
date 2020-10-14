@@ -4,7 +4,7 @@
 - Polymorphism - many realization of one class can be used in one way by base class.
 
 #### Diamond problem of multiple Inheritance
-![](/images/diamond.png)
+![](/notes/images/diamond.png)
 
 #### Design principles
 - SOLID
