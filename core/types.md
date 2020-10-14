@@ -1,4 +1,4 @@
-# Java Core
+## Java Core
 
 |Type   |Default|Size   |Range
 |-------|-------|-------|-----

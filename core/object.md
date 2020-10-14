@@ -1,4 +1,4 @@
-### Object class methods
+## Object class methods
 
 |Object class methods|Description|
 |-|-|
