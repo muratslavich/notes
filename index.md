@@ -6,7 +6,7 @@
 - Java Core
 	- [types and operations](core/types.md)
 	- [Object class methods](core/object.md)
-	- immutability
+	- [immutability](core/immutability.md)
 	- references
 	- static keyword
 	- inner classes
