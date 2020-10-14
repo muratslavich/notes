@@ -3,37 +3,34 @@
 	- [Basic principles](object-oriented-paradigm/principles.md)
 	- [Patterns](object-oriented-paradigm/patterns.md)
 - [Compilation and execution](compilation/compilation.md)
-- [Java Core](core/core.md)
-	- primitives
-	- autoboxing
-	- operations
-	- class methods
-- classes
+- Java Core
+	- [types and operations](core/types.md)
+	- [Object class methods](core/object.md)
 	- immutability
 	- references
-	- static
+	- static keyword
 	- inner classes
-- exceptions
-- Collections
-	- equals & hashCode
-	- HashMap
-	- Complexity
-- Generics
-	- erasing
-	- heap pollution
-- Mutithreading
-	- creating
-	- synchronization
-	- volatile
-	- concurrent collections
-- Lambda and functional interfaces
-- Stream API
-- Serialization
-- Reflection
-- Java Memory model
-- Garbage collector
-- JMX console
-- JNDI
+	- exceptions
+	- collections
+		- equals & hashCode
+		- HashMap
+		- Complexity
+	- generics
+		- type erasure
+		- heap pollution
+	- mutithreading
+		- creating
+		- synchronization
+		- volatile
+		- concurrent collections
+		- java memory model
+	- lambda and functional interfaces
+	- stream API
+	- serialization and marshaling
+	- reflection
+	- garbage collectors
+	- JMX console
+	- JNDI
 - Web technologies
 	- Http
 	- Soap
