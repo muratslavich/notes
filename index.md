@@ -10,7 +10,7 @@
 	- [references](core/references.md)
 	- [static keyword](core/static.md)
 	- [inner classes](core/inner.md)
-	- exceptions
+	- [exceptions](core/exceptions.md)
 	- collections
 		- equals & hashCode
 		- HashMap
