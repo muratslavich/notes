@@ -4,7 +4,7 @@
 <details>
 	<summary>Request along a chain of handlers</summary>
 
-![](/images/chain.png)  
+![](images/chain.png)  
 
 ```java
 interface HeadersChain {
