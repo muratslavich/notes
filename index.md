@@ -3,7 +3,7 @@
 	- [Basic principles](object-oriented-paradigm/principles.md)
 	- [Patterns](object-oriented-paradigm/patterns.md)
 - [Compilation and execution](compilation/compilation.md)
-- Java Core
+- [Java Core](core/core.md)
 	- data types
 		- primitives
 		- autoboxing
