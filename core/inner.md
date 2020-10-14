@@ -1,6 +1,6 @@
 ##  Innner classes
 
-![](/notes/images/inner.jpg)
+![](/notes/images/inner_classes.jpg)
 
 ### Inner class
 You just need to write a class within a class.
