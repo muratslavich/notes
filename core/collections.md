@@ -33,3 +33,7 @@
   - LinkedList
   - PriorityQueue - natural sorted elements. Order can be overridden by additional `Comparator`
   - ArrayDeque - LIFO. dynamic array, doesn't allow null element and access by index.  
+
+---
+
+![](/notes/images/collections-1.png)
