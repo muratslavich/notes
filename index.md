@@ -11,7 +11,7 @@
 	- [static keyword](core/static.md)
 	- [inner classes](core/inner.md)
 	- [exceptions](core/exceptions.md)
-	- collections
+	- [collections](core/collections.md)
 		- equals & hashCode
 		- HashMap
 		- Complexity
