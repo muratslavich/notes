@@ -14,7 +14,7 @@
 	- [collections](core/collections.md)
 		- [equals & hashCode](core/eq-hash.md)
 		- HashMap
-		- complexity
+		- [complexity](core/complexity.md)
 	- generics
 		- type erasure
 		- heap pollution
