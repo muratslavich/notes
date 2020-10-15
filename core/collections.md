@@ -2,7 +2,7 @@
 
 ![](/notes/images/collections.jpg)
 
-![](/notes/images/collections-complex.jpg)
+![](/notes/images/collections-complex.png)
 
 ||Hash Table|Resizable Array|Balanced Tree|Linked List|Hash Table + Linked List|
 |-    |-|-|-|-|-|
