@@ -12,7 +12,7 @@
 	- [inner classes](core/inner.md)
 	- [exceptions](core/exceptions.md)
 	- [collections](core/collections.md)
-		- equals & hashCode
+		- [equals & hashCode](core/eq-hash.md)
 		- HashMap
 		- complexity
 	- generics
