@@ -15,18 +15,51 @@
 
 ![](/notes/images/boxing.jpg)
 
-### Bitwice Operations
-|Operator |	Description |	Example |
+### Перевод из 10й в 2ю системы счисления
+|    |   |    |
 |-|-|-|
-| & (bitwise and) |	Binary AND Operator copies a bit to the result if it exists in both operands. |	(A & B) will give 12 which is 0000 1100 |
-| : (bitwise or) |	Binary OR Operator copies a bit if it exists in either operand. |	(A : B) will give 61 which is 0011 1101|
-|^ (bitwise XOR) | Binary XOR Operator copies the bit if it is set in one operand but not both. | (A ^ B) will give 49 which is 0011 0001|
-|~ (bitwise compliment) |	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits. |	(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.|
-|<< (left shift) | Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.|	A << 2 will give 240 which is 1111 0000|
-|>> (right shift) |	Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. |	A >> 2 will give 15 which is 1111|
-|>>> (zero fill right shift) | Shift right zero fill operator. The left operands value is moved right by the number of bits specified by the right operand and shifted values are filled up with zeros. |	A >>>2 will give 15 which is 0000 1111|
-|<<= | Left shift AND assignment operator. | C <<= 2 is same as C = C << 2|
-|>>= |	Right shift AND assignment operator. |	C >>= 2 is same as C = C >> 2|
-|&= |	Bitwise AND assignment operator. |	C &= 2 is same as C = C & 2|
-|^= |	bitwise exclusive OR and assignment operator.|	C ^= 2 is same as C = C ^ 2|
-|:= |	bitwise inclusive OR and assignment operator. |	C := 2 is same as C = C : 2|
+| 61 | 2 |    |
+| 30 | 2 | - 1|  
+| 15 | 2 | - 0|
+| 7  | 2 | - 1|
+| 3  | 2 | - 1|
+| 1  | 2 | - 1|
+|    |   | - 1 1 1 1 0 1|
+
+111101 = 1·2^5 + 1·2^4 + 1·2^3 + 1·2^2 + 0·2^1 + 1·2^0 = 61
+
+### Bitwice Operations
+
+| & (and)  |\| (or) |~ (not) |^ (xor)
+|----------|-       |-       |-
+| 11001010 |11001010|11001010|11001010
+| 11100010 |11100010|        |11100010
+| -------- |--------|--------|--------
+| 11000010 |11101010|00110101|00101000
+
+xor - result is 1 if initial variables are different.
+
+### Bitwice shifts
+Операторы сдвига << и >> сдвигают биты в переменной влево или вправо на указанное число. При этом на освободившиеся позиции устанавливаются <b>нули</b>.
+Для сдвига вправо отрицательного числа устанавливаются <b>единицы</b>.
+
+> x >> 1 - деление на 2  
+  x << 1 - умножение на 2
+
+```
+x = 7         // 00000111 (7)
+x = x >> 1    // 00000011 (3)
+x = x << 1    // 00000110 (6)
+x = x << 5    // 11000000 (-64)
+x = x >> 2    // 11110000 (-16)
+```
+
+###### Беззнакового битового сдвига вправо >>>
+На освободившиеся позиции всегда устанавливаются <b>нули</b>
+```
+x = 7          // 00000111 (7)
+x = x << 5     // 11100000 (-32)
+x = x >>> 2    // 00111000 (56)
+```
+
+#### Bitwice operations example
