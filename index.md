@@ -13,8 +13,9 @@
 	- [exceptions](core/exceptions.md)
 	- [collections](core/collections.md)
 		- [equals & hashCode](core/eq-hash.md)
-		- HashMap
 		- [complexity](core/complexity.md)
+		- [maps](core/maps.md)
+		- [lists](core/lists.md)
 	- generics
 		- type erasure
 		- heap pollution

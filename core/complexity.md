@@ -30,10 +30,10 @@ Lower bound for f(n).
   n^2 = Ω(n log(n))  
   2 n + 1 = O(n)
 
-#### Big Θ
+#### Big-Θ
 `f(n) = Θ(g(n))` if and only `f(n) = O(g(n))` and `f(n) = Ω(g(n))`  
 
 The upper and lower bounds for f(n).
 
-> 2n = Θ(n)
+> 2n = Θ(n)  
   n^2 + 2n + 1 = Θ(n^2)
