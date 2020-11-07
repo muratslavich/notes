@@ -30,6 +30,7 @@ public boolean equals(Object obj) {
 - В версиях 8 и 9 это число, полученное на основании состояния потока.
 - Azul’s Zing действительно генерирует идентификационный хеш на основании адреса памяти объекта.
 
+  
 ### equals() implementation
 
 ```java
@@ -47,6 +48,7 @@ public boolean equals(Object o) {
 }
 ```
 
+  
 > It can violations happen, if we extend a class that has overridden equals().
 
 ```java
@@ -61,6 +63,7 @@ voucher.equals(cash) => false // As expected.
 cash.equals(voucher) => true // That's wrong.
 ```
 
+  
 ### hashCode() implementation
 
 ```java
@@ -80,6 +83,7 @@ public int hashCode() {
 }
 ```
 
+  
 For different hash for unequal objects we have to consider all fields of the class.
 ```java
 @Override
@@ -88,6 +92,7 @@ public int hashCode() {
 }
 ```
 
+  
 Standard implementation.
 To get more unique hashes we can use prime numbers (31 here).  
 31 - простое, нечетное число, умножение на которое заменяется компилятором автоматически на (n << 5) - n = n * 31.  
@@ -103,8 +108,10 @@ public int hashCode() {
 }
 ```
 
+  
 > Хэш от числа int - само число
 
+  
 Как взять хэш от long. `int hash = (int) (id ^ (id >>> 32));`  
 Беззнаковый сдвиг вправо на 32 бита - то есть мы берем старшие биты.  
 XOR числа на полученное ранее значение - по сути XOR старших битов с младшими.  
@@ -118,6 +125,7 @@ XOR числа на полученное ранее значение - по су
                                  0100 1010 0100 0100 0100 1010 0100 0100           //             1 245 989 444 
 ```
 
+  
 String.hashCode() compute as:
 > каждый символ умножается на 31^(n-1)
 ```
