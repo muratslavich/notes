@@ -2,7 +2,7 @@
 
 ![](/notes/images/complexity.jpg)
 
-Assymptotic analysis - describing limiting behavior. F.e. `f(n) = n^2 + 3n`, when n becomes very large, the term 3n becomes insignificant compared to n^2 and we say - `f(n)` asymptotically equal `n^2`.
+Asymptotic analysis - describing limiting behavior. F.e. `f(n) = n^2 + 3n`, when n becomes very large, the term 3n becomes insignificant compared to n^2 and we say - `f(n)` asymptotically equal `n^2`.
 
 Complexity is time function versus input size n.  
 
