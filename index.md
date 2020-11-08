@@ -14,7 +14,7 @@
 	- [collections](core/collections.md)
 		- [equals & hashCode](core/eq-hash.md)
 		- [complexity](core/complexity.md)
-		- [maps](core/maps.md)
+		- [HashMap](core/maps.md)
 		- [lists](core/lists.md)
 	- generics
 		- type erasure

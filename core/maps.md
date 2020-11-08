@@ -1,21 +1,25 @@
-## Maps
-
 ### HashMap
 - [Initialization](#initialization)
-- Adding element
-- Resize
+- [Adding element](#Adding element)
+- Getting value
 - Removing element
+- Resize
 - Iteration
 
 #### HashMap
 
-- __table__ — Массив типа `Entry[]`, который является хранилищем ссылок на списки (цепочки) значений;
-- __loadFactor__ — Коэффициент загрузки. Значение по умолчанию 0.75 является хорошим компромиссом между временем доступа и объемом хранимых данных;
-- __threshold__ — Предельное количество элементов, при достижении которого, размер хэш-таблицы увеличивается вдвое. Рассчитывается по формуле `(capacity * loadFactor)`;
-- __size__ — Количество элементов HashMap-а;
+```java
+public class HashMap<K,V> implements Map<K,V> {
+    Node<K,V>[] table; // массив - хранилище ссылок на цепочки значений
+    Set<Map.Entry<K,V>> entrySet; // хранилище связок (entry) ключ - значение
+    int size;
+    int threshold; // Предельное количество элементов, при достижении которого, размер хэш-таблицы увеличивается вдвое. `(capacity * loadFactor)`
+    float loadFactor; // Коэффициент загрузки. Значение по умолчанию 0.75
+}
+```
 
 #### Initialization
-
+HashMap defines `initialCapacity` and `loadFactor` during initialization.
 
 <details>
 <summary>Examples</summary>
@@ -88,3 +92,4 @@ Map<String, String> map = Map.ofEntries(
 
 </details>
 
+#### Adding element
