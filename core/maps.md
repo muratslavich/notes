@@ -10,11 +10,11 @@
 
 ```java
 public class HashMap<K,V> implements Map<K,V> {
-    Node<K,V>[] table; // массив - хранилище ссылок на цепочки значений
+    Node<K,V>[] table;  // массив - хранилище ссылок на цепочки значений
     Set<Map.Entry<K,V>> entrySet; // хранилище связок (entry) ключ - значение
-    int size;
-    int threshold; // Предельное количество элементов, при достижении которого, размер хэш-таблицы увеличивается вдвое. `(capacity * loadFactor)`
-    float loadFactor; // Коэффициент загрузки. Значение по умолчанию 0.75
+    int size;           // 16 by default
+    int threshold;      // Предельное количество элементов, при достижении которого, размер хэш-таблицы увеличивается вдвое. `(capacity * loadFactor)`
+    float loadFactor;   // Коэффициент загрузки. Значение по умолчанию 0.75
 }
 
 class Node<K,V> implements Map.Entry<K,V> {
@@ -103,3 +103,27 @@ Map<String, String> map = Map.ofEntries(
 </details>
 
 #### Adding element
+
+```java
+someMap.put("key", value);
+```
+
+> Computes key.hashCode() and spreads (XORs) higher bits of hash to lower.  
+> because the table use _power-of-two masking_ to get `index = hash & (n-1)`, n - table size  
+> --  
+> Power of two masking  
+> for example we have int hash 1141113916, but table size - 16  
+> 0100 0100 0000 0100 0000 0100 0011 1100 &  
+> 0000 0000 0000 0000 0000 0000 0000 1111  
+> 0000 0000 0000 0000 0000 0000 0000 1100 - 12
+1. hash(key)
+    - `if (key == null) return 0`
+    - `else (hash = key.hashCode()) ^ (hash >>> 16)` 
+2. find index `i = (n - 1) & hash`
+3. crete Node `new Node { hash = 1256; key=key; value=value; next=null }`
+4. put created node to table with index 
+    - if bucket is empty `table[i] = node`
+    - else check each key to `existKey.hashCode == newKey.hashCode && newKey.equals(existKey)` if True -> replace node
+    - else put in the end of the nodes list (previous next reference set to new node) 
+> In java 8 and newer, after certain number of collision, list replaced by balanced Tree
+> O(log n) in the worst case instead of O(n) with lists
