@@ -1,6 +1,6 @@
 ### HashMap
 - [Initialization](#initialization)
-- [Adding element](#Adding element)
+- [Adding element](#adding-element)
 - Getting value
 - Removing element
 - Resize
