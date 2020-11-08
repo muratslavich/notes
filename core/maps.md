@@ -108,9 +108,12 @@ Map<String, String> map = Map.ofEntries(
 someMap.put("key", value);
 ```
 
+>   
 > Computes key.hashCode() and spreads (XORs) higher bits of hash to lower.  
 > because the table use _power-of-two masking_ to get `index = hash & (n-1)`, n - table size  
-> --  
+>
+> --
+>  
 > Power of two masking  
 > for example we have int hash 1141113916, but table size - 16  
 > 0100 0100 0000 0100 0000 0100 0011 1100 &  
