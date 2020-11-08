@@ -16,7 +16,17 @@ public class HashMap<K,V> implements Map<K,V> {
     int threshold; // Предельное количество элементов, при достижении которого, размер хэш-таблицы увеличивается вдвое. `(capacity * loadFactor)`
     float loadFactor; // Коэффициент загрузки. Значение по умолчанию 0.75
 }
+
+class Node<K,V> implements Map.Entry<K,V> {
+    final int hash;
+    final K key;
+    V value;
+    Node<K,V> next;
+}
 ```
+
+![](/notes/images/hash-map.png)
+<br/>
 
 #### Initialization
 HashMap defines `initialCapacity` and `loadFactor` during initialization.
