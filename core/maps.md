@@ -17,6 +17,8 @@
 #### Initialization
 
 
+<details>
+<summary>Examples</summary>
 
 ##### Static map initialization
 ```java
@@ -32,10 +34,9 @@ static {
 >it creates an anonymous extra class at every usage, holds hidden references to the enclosing object, and might cause memory leak issues
 
 ```java
-Map<String, String> doubleBraceMap  = new HashMap<String, String>() {{
-    put("key1", "value1");
-    put("key2", "value2");
-}};
+Map<String, String> doubleBraceMap  = new HashMap<String, String>() {
+    { put("key1", "value1"); put("key2", "value2"); }
+};
 ```
 
 ##### Using Collections
@@ -84,3 +85,6 @@ Map<String, String> map = Map.ofEntries(
   new AbstractMap.SimpleEntry<String, String>("home", "1231231231")
 );
 ```
+
+</details>
+
