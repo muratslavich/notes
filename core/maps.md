@@ -1,7 +1,7 @@
 ### HashMap
 - [Initialization](#initialization)
 - [Adding element](#adding-element)
-- Getting value
+- [Getting value](#getting-element)
 - Removing element
 - Resize
 - Iteration
@@ -127,3 +127,9 @@ someMap.put("key", value);
     - else put in the end of the nodes list (previous next reference set to new node) 
 > In java 8 and newer, after certain number of collision, list replaced by balanced Tree
 > O(log n) in the worst case instead of O(n) with lists
+
+#### Getting element
+1. hash(key)
+2. table index
+3. iterate to all entries and check keys to `existKey.hashCode == newKey.hashCode && newKey.equals(existKey)`
+4. if next element == null; return null
