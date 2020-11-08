@@ -1,24 +1,23 @@
 ### Equals and HashCode
 
 #### Equality - objects of the same class with equal fields
-- reflexive: an object must equal itself
-- symmetric: x.equals(y) must return the same result as y.equals(x)
-- transitive: if x.equals(y) and y.equals(z) then also x.equals(z)
-- consistent: the value of equals() should change only if a property that is contained in equals() changes (no randomness allowed)
+- reflexive: `a.equals(a) == True`
+- symmetric: `x.equals(y) == y.equals(x)`
+- transitive: if `x.equals(y)` and `y.equals(z)` -> `x.equals(z)`
+- consistent: result of equality changes only if some field has changed
 
 >Thus, if we override the equals() method, we also have to override hashCode().
-hashCode - number of a certain length.
 
 #### Hash - function that map object to fixed size value
-- Internal consistency: the value of hashCode() may only change if a property that is in equals() changes
-- equals consistency: objects that are equal to each other must return the same hashCode
-- collisions: unequal objects may have the same hashCode
+- Internal consistency: `hashCode()` changes only if a related with `equals()` field has changed
+- equals consistency: if `a.eqauls(b) == True` -> `a.hashCode() == b.hashCode()`
+- collisions: if `a.eqauls(b) == False` -> it can be the same hashes
  <br/>
  
 ### equals() implementation
 
-== compares identity, or reference equality.  
-equals() compares object states (object data).  
+`==          `-> compares identity, or reference equality.  
+`equals()    `-> compares object states (object data).  
 
 ###### Default equals() implementation in Class Object
 > Shallow comparison: The default implementation of equals method simply checks if two objects references refer to the same Object.
