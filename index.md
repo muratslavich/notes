@@ -1,4 +1,4 @@
-### Interview
+### Table
 - OOP
 	- [Basic principles](object-oriented-paradigm/principles.md)
 	- [Patterns](object-oriented-paradigm/patterns.md)
@@ -15,11 +15,10 @@
 		- [equals & hashCode](core/eq-hash.md)
 		- [complexity](core/complexity.md)
 		- [HashMap](core/maps.md)
-		- [lists](core/lists.md)
 	- generics
 		- type erasure
 		- heap pollution
-	- mutithreading
+	- multithreading
 		- creating
 		- synchronization
 		- volatile
