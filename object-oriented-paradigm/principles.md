@@ -37,3 +37,9 @@
 - High cohesion and low coupling
   - low coupling - How much do your different modules depend on each other?
   - high cohesion - represents the degree to which a part of a code base forms a logically single, atomic unit.
+
+
+- Наследование - является
+- Ассоциация - имеет
+    - композиция - не существует вне
+    - агрегация - внедряется извне
